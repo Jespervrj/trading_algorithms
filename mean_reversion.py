@@ -42,7 +42,6 @@ class Model():
         rs = gain / loss
         self.df['RSI'] = 100 - (100 / (1 + rs))
         
-
     # Backtest mean reversion strategy
     def backtest(self, signal_confidence=.95):
         self.generate_indicators()
@@ -62,8 +61,6 @@ class Model():
         self.df['PortfolioValue'] = (1 + self.df['StrategyReturn']).cumprod() * self.initial_cash
         return self.df['PortfolioValue'].iloc[-1]
     
-        
-
     # Plot results
     def plot_results(self):
         plt.figure(figsize=(14, 7))

@@ -7,7 +7,7 @@ This project implements statistical tools to illustrate how to use various tradi
 * Mean reversion  
 
 ### Buy and hold
-This is merely a benchmark for the the latter two. The strategy simply buys the assets on the initial date and holds until end
+This is merely a benchmark for the the latter strategies. The strategy simply buys the assets on the initial date and holds until end
 
 ### Trend following
 This strategy tried to identify trends in the market by leveraging a short term and a long terms moving average. If the short terms moving average is different from the long term moving average we assume a trend and generates a buy/sell signal based on this
